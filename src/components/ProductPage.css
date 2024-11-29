@@ -1,0 +1,92 @@
+.product-page {
+    display: flex;
+    flex-wrap: nowrap;  /* Pas de retour à la ligne pour forcer l'alignement horizontal */
+    gap: 2rem;  /* Espace entre les éléments */
+    padding: 1rem;
+    justify-content: flex-start;  /* Aligner les produits à gauche */
+    overflow-x: auto;  /* Ajouter un défilement horizontal si nécessaire */
+    -webkit-overflow-scrolling: touch; /* Pour le défilement fluide sur mobile */
+  }
+  
+  /* Cadre individuel */
+  .product {
+    flex: 0 0 auto; /* Empêche les éléments de se redimensionner */
+    width: 300px; /* Fixe la largeur du produit */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);  /* Zoom au survol */
+  }
+  
+  /* Image du produit */
+  .product-image img {
+    width: 300px;  /* Taille fixe de l'image en largeur */
+    height: 300px;  /* Taille fixe de l'image en hauteur */
+    object-fit: cover;  /* Recadre l'image pour qu'elle s'adapte au cadre */
+    display: block;
+    margin: 0 auto;  /* Centre l'image */
+  }
+  
+  /* Informations du produit */
+  .product-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product-info h1 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .product-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .product-info .price {
+    font-size: 1.1rem;
+    color: #007BFF;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  /* Boutons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  .buy-now {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .buy-now:hover {
+    background-color: #0056b3;
+  }
+  
